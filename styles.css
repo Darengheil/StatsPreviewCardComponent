@@ -30,15 +30,14 @@ p{
     justify-content: center;
     position: absolute;
     left: 25%;
-    margin-left: -25px;
     top: 25%;
-    margin-top: -50px;
     font-family: 'Inter', sans-serif;
     background-color: hsl(244, 38%, 16%);
     border-radius: 5px;
+    
 }
 .description{
-    margin: 2em 6em;
+    margin: 3em 6em;
     max-width: 340px;
     flex-wrap: wrap;
 }
@@ -46,7 +45,6 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    max-height: 100px;
 }
 .stat-description{
     color: hsla(0, 0%, 100%, 0.6);
@@ -56,4 +54,37 @@ p{
 .stat-values{
     font-weight: 700;
     color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 90%;
+        left: 5%;
+        top: 5%;
+    }
+    .description{
+        margin: 0 1em;
+    }
+    .stats-container{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        margin-bottom: 15px;
+    }
+    .text{
+        font-size: 16px;
+        margin-bottom: 2em;
+    }
+    .stat-description{
+        margin-bottom: 10px;
+    }
+    .stat-description{        
+        margin-bottom: 2em;
+    }
 }
